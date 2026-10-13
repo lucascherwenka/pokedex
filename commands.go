@@ -3,10 +3,7 @@ package main
 import (
 	"fmt" 
 	"os"
-	"net/http"
-	"log"
-	"io"
-	"encoding/json"
+	"errors"
 )
 
 func commandExit(cfg *config) error {

@@ -15,10 +15,10 @@ type cliCommand struct {
 }
 
 type config struct {
-	commands  	    map[string]cliCommand
-	pokeapiClient   pokeapi.Client
-	next      		*string
-	previous  		*string
+	commands  	     map[string]cliCommand
+	pokeapiClient    pokeapi.Client
+	nextLocationsURL *string
+	prevLocationsURL *string
 }
 
 func getCommands() map[string]cliCommand {
@@ -36,7 +36,7 @@ func getCommands() map[string]cliCommand {
 		"map": {
 			name:		 "map",
 			description: "Displays 20 locations",
-			callback:	 commandMap,
+			callback:	 commandMapf,
 		},
 		"mapb": {
 			name:		 "mapb",
