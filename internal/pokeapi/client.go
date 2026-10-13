@@ -3,7 +3,7 @@ package pokeapi
 import (
 	"net/http"
 	"time"
-	"github.com/lucascherwenka/pokedex/internal/pokeapi"
+	"github.com/lucascherwenka/pokedex/internal/pokecache"
 )
 
 // Client -
