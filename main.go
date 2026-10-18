@@ -11,7 +11,6 @@ func main() {
 		commands:      getCommands(),
 		pokeapiClient: pokeClient,
 	}
-
 	startRepl(cfg)
 }
  
